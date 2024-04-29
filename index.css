@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*HEADER SECTION*/
+.header{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(0, 0, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.logo{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgb(173, 171, 171);
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.logo strong{
+    color: white;
+    font-size: 60px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.logo_title{
+    text-align: center;
+    color: #ececec;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 0px;
+}
+.routers{
+    margin-top: 50px;
+    cursor: pointer;
+    margin-right: 100px;
+}
+.routers_list{
+    list-style-type: none;
+    text-align: left;
+    font-size: 20px;
+    line-height: 50px;
+}
+.routers_list li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.692); ;
+}
+.routers_list i{
+    color: rgba(255, 255, 255, 0.692);
+    padding-right: 20px;
+}
+.route_items:hover{
+    color: white;
+}
+.routers_list i:hover{
+    color: white;
+}
+
+/*HOME SECTION*/
+.hero{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/home.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home_name{
+    color: white;
+    font-size: 70px;
+    font-family: "Braah One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.domain{
+    color: rgb(236, 235, 235);
+    font-size: 30px;
+    font-family: "Anta", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/*ABOUT SECTION*/
+.about{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/about.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.2;
+}
+.about h1{
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about h2{
+    padding: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about p{
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: larger;
+}
+.icons{
+    margin-left: 20px;
+}
+.icons a i{
+    color: white;
+    padding: 10px;
+    font-size: x-large;
+}
+.icons a i:hover{
+    color: rgb(101, 101, 105);
+    transition: all 0.4s linear;
+}
+.about_img img{
+    border-radius:20px ;
+    border: 2px solid white;
+    opacity: 0.8;
+}
+
+/*SKILLS SECTION*/
+.skills{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0.2;
+}
+.skills h1{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+.skills p{
+    color: #ececec;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skill_container{
+    width: 80%;
+    display: flex;
+}
+.skill_set{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 50%;
+}
+.skill_items{
+    background-color: #ececec;
+    width: 60%;
+    height: 25px;
+    text-align: left;
+    border-radius: 50px;
+    display: flex;
+}
+.html{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 92%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.css{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 90%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.js{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 85%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.node{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 65%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.express{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 70%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.react{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 80%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.sql{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 65%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.figma{
+    color: rgb(2, 17, 63);
+    background-color: orangered;
+    width: 70%;
+    height: 25px;
+    border-radius: 50px;
+    font-family: "Audiowide", sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    text-align: center;
+}
+.skill_items i{
+    color:rgb(2, 17, 63) ;
+    padding-right: 10px;
+}
+
+/*PROJECT SECTION*/
+.project{
+    width: 100%;
+    height: 125vh;
+    background-color: rgb(211, 207, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project header h1{
+    color: rgba(0, 0, 0, 0.788);
+    font-family: "Righteous", sans-serif;
+    font-size: 45px;
+    padding: 15px 0px;
+}
+.project_cards{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 31%;
+    height: 50vh;
+    border: 1px solid rgb(255, 251, 251);
+    border-radius: 10px;
+    text-align: center;
+}
+.card_img{
+    border-radius: 10%;
+    object-fit: contain;
+    padding: 10px;
+}
+.card_title{
+    font-family: "Lugrasimo", cursive;
+    font-weight: 600;
+    font-size: larger;
+}
+.card_body{
+    text-align:center;
+    padding:10px;
+    font-family: sans-serif;
+}
+.card_link{
+    font-family: monospace;
+    font-size: larger;
+    font-weight: bold;
+}
+
+/*RESUME SECTION*/
+.resume{
+    width: 100%;
+    height: 180vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+.check_out{
+    font-family: "Righteous", sans-serif;
+    font-size: xx-large;
+    padding: 15px 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.resume_title{
+    background-color: rgb(4, 64, 114);
+    padding: 30px 20px;    
+}
+.resume_name{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+}
+.resume_title h3{
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+}
+.resume_title small{
+    color: #d1cfcf;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.resume_info{
+    background-color: rgb(23, 33, 78);
+    padding: 5px;
+}
+.resume_info ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+.resume_info ul li{
+    padding-left: 40px;
+}
+.resume_info ul li i{
+    padding-right: 5px;
+}
+.resume_body{
+    display: flex;
+    justify-content: start;
+}
+.resume_section1{
+    width: 50%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 25px;
+}
+.education_section_head{
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+}
+.section h3 i{
+    font-size: x-small;
+    color: navy;
+    padding-right: 5px;
+}
+.section{
+    padding: 15px 10px;
+}
+.section h4{
+    font-weight: 500;
+}
+.section small{
+    font-style:italic ;
+    color: rgb(7, 194, 194);
+}
+.section p{
+    font-style: italic;
+    color: grey;
+    font-size: small;
+}
+.project_section_head{
+    margin-top: 40px;
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+}
+.project_lists{
+    width: 90%;
+}
+.project_lists ul{
+    padding: 0px 10px;
+    list-style-type: none;
+}
+.project_lists ul li{
+    padding-top: 25px;
+}
+.project_lists ul li span{
+    font-weight: bold;
+}
+.resume_section2{
+    width: 50%;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px 25px;
+}
+.skills_section_head{
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+    padding-bottom: 20px;
+}
+.skills_list ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 5px;
+}
+.skills_list ul li{
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.685);
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.internship_section_head{
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.internships{
+    padding: 10px;
+}
+.internships small{
+    font-style:italic ;
+    color: rgb(7, 194, 194);
+}
+
+.interest_section_head{
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.interest_list ul{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px 5px;
+}
+.interest_list ul li{
+    padding: 5px 10px;
+    border: 1px solid rgb(148, 148, 148);
+    color: rgba(0, 0, 0, 0.815);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.contact_section_head{
+    color: rgb(5, 111, 182);
+    text-decoration:3px underline;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.info ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+    padding: 5px 5px;
+}
+.info ul li{
+    padding: 5px 10px;
+    color: rgba(0, 0, 0, 0.815);
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.info ul li span{
+    font-style: italic;
+    font-weight: 500;
+}
+
+/*DOWNLOAD SECTION*/
+.download{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height:7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download_btn{
+    width: 25%;
+    height: 5vh;
+    border: transparent;
+    background-color:grey ;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.download_btn:hover{
+    box-shadow: 2px 2px 15px gray;
+}
+/*CONTACT SECTION*/
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/contact.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-size: cover;
+}
+.contact_form{
+    background-color: #ecececbb;
+    border-radius: 25px;
+    width: 40%;
+    height: 70vh;
+}
+
+.contact_form h1{
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+    padding: 10px 0px ;
+}
+.contact_form label{
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.contact_form input{
+    width: 70%;
+    margin-right:120px ;
+    padding: 10px 0px;
+    margin:20px 0px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid white;
+    text-align: center;
+}
+.name{
+    margin-top: 30px;
+}
+.buttons button{
+    outline: none;
+    border: none;
+    width: 25%;
+    height: 7vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-left: 17%;
+    margin-top: 20px;
+    border-radius: 25px;
+    background-color: navy;
+    color: white;
+    font-weight: bold;
+}
+.buttons button:hover{
+    background-color: white;
+    color: navy;
+    box-shadow: 1px 1px 15px navy;
+    cursor: pointer;
+    transition: all 0.4s linear;
+}
+input:hover{
+    border:2px solid rgba(61, 61, 241, 0.705);
+    box-shadow: 1px 1px 15px rgb(61, 61, 241);
+    transition:  0.2s linear;
+}
+.contact_info{
+    width: 40%;
+    height: 40vh;
+    background-color: #ecececbb;
+    border-radius: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.contact_info i{
+    font-size: larger;
+    padding: 0pc 5px;
+}
+.call_us,.mail,.location{
+    width: 100%;
+    display: flex;
+    margin: 0px 20%;
+    padding: 10px 0px;
+}
+.follow{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    text-align: center;
+    padding-top: 30px;
+}
+.follow_icons{
+    text-align: center;
+}
+.follow_icons i{
+    font-size: xx-large;
+    color: navy;
+    padding-top: 15px;
+}
+
+/*FOOTER SECTION*/
+.footer{
+    width: 100%;
+    height: 5vh;
+    background-color: #ececec;
+}
+.footer p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
