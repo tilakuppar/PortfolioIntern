@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/printThis/1.15.0/printThis.js" integrity="sha512-Fd3EQng6gZYBGzHbKd52pV76dXZZravPY7lxfg01nPx5mdekqS8kX4o1NfTtWiHqQyKhEGaReSf4BrtfKc+D5w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <strong class="">TU</strong>
+        </div>
+        <h1 class="logo_title">Tilak Uppar</h1>
+        <div class="routers">
+            <ul class="routers_list">
+                <li class="route_items"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li class="route_items"><a href="#about" onclick="scrollToDiv()"><i class="fa-solid fa-user"></i>About</a></li>
+                <li class="route_items"><a href="#skills"><i class="fa-solid fa-layer-group"></i>Skills</a></li>
+                <li class="route_items"><a href="#project"><i class="fa-solid fa-sheet-plastic"></i>Projects</a></li>
+                <li class="route_items"><a href="#resume"><i class="fa-solid fa-file"></i>Resume</a></li>
+                <li class="route_items"><a href="#contact"><i class="fa-solid fa-phone-volume"></i>Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="home" id="home">        
+            <p class="home_name" id="hname">Tilak Uppar</p>
+            <p class="domain" id="domain">I'm Web Developer</p>
+        </div>
+
+        <div class="about" id="about">
+            <div class="about_text">
+                <h1 class="">About Me</h1>
+                <h2 class="welcome">Welcome to my Website!</h2>
+                <p class="about_content"><span>I'm Tilak Uppar</span> currently pursuing my Degree in <br> Dayananda University
+                    Banglore,<br>
+                    while i'm very obsessed with Web Developing and<br>i'm very intrested in Front-end Developing
+                </p>
+                <p class="more">Know More About Me</p>
+                <div class="social_media">
+                    <div class="icons">
+                        <a href="https://instagram.com/tillu_veer?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/tilli.veer?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/tilak-uppar-a08448234"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="about_img">
+                <img src="assets/tilak.jpeg" alt="" width="450px" height="500px">
+            </div>
+        </div>
+
+        <div class="skills" id="skills">
+            <h1>Skill Set</h1>
+            <p>Leveraging my expertise in HTML, CSS, JavaScript, and various frameworks, I bring ideas to life on the web.</p>
+            <div class="skill_container">
+                <div class="skill_set">
+                    <div class="skill_items">
+                        <h4 class="html"><i class="fa-brands fa-html5"></i>HTML</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="css"><i class="fa-brands fa-css3-alt"></i>CSS</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="js"><i class="fa-brands fa-js"></i>JS</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="node"><i class="fa-brands fa-node-js"></i>NODE JS</h4>
+                    </div>
+                </div>
+
+                <div class="skill_set">
+                    <div class="skill_items">
+                        <h4 class="express">ex  EXPRESS JS</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="react"><i class="fa-brands fa-react"></i>REACT</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="sql"><i class="fa-solid fa-database"></i>SQL</h4>
+                    </div>
+                    <div class="skill_items">
+                        <h4 class="figma"><i class="fa-brands fa-figma"></i>FIGMA</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project" id="project">
+            <header>
+                <h1>Projects</h1>
+            </header>
+            <div class="project_cards">
+                <div class="card">
+                    <img src="/assets/chat.jpg" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">CHAT APPLICATION</strong>
+                    <p class="card_body"> Built a real-time chat application using WebSockets and Express.js, 
+                        with HTML, CSS, and JavaScript. Enables instant messaging with a responsive interface. 
+                        Demonstrates proficiency in full-stack web development and real-time communication.
+                    </p>
+                    <a href="https://tilakuppar.github.io/ChatApplication/" class="card_link">Visit</a>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/calci.jpg" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">CALCULATOR</strong>
+                    <p class="card_body">Designed and developed a calculator web application using HTML, CSS, and 
+                        JavaScript. Capable of performing fundamental arithmetic calculations.
+                    </p>
+                    <a href="https://tilakuppar.github.io/Calculator/" class="card_link">Visit</a>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/money.jpg" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">Money Tracker</strong>
+                    <p class="card_body">Crafted a money tracker web app using HTML, CSS, JavaScript, 
+                        Express.js, and database connectivity. Enables users to monitor income, expenses, 
+                        and real-time balance, showcasing full-stack development skills.
+                    </p>
+                    <a href="https://tilakuppar.github.io/MoneyTracker/" class="card_link">Visit</a>
+                </div>
+            </div>
+            <br>
+            <div class="project_cards">
+                <div class="card">
+                    <img src="/assets/tic-tac-toe.png" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">TIC TAC TOE</strong>
+                    <p class="card_body"> I created a Tic Tac Toe game frontend using HTML and CSS, featuring 
+                        a 3x3 grid of buttons numbered 1 to 9. Using JavaScript, I implemented game logic to determine 
+                        if 'O' or 'X' wins. The winner is displayed in an alert box
+                    </p>
+                    <a href="https://tilakuppar.github.io/Tic_Tac_Toe/" class="card_link">Visit</a>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/text-editor.png" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">TEXT EDITOR</strong>
+                    <p class="card_body">Designed a text editor web application with HTML, CSS, and JavaScript, 
+                        featuring font size, family, alignment, style, and case options. Showcases front-end development 
+                        skills for basic text editing functionalities.
+                    </p>
+                    <a href="https://tilakuppar.github.io/TextEditor/" class="card_link">Visit</a>
+                </div>
+
+                <div class="card">
+                    <img src="/assets/form.png" alt="" class="card_img" width="100%" height="140vh">
+                    <strong class="card_title">REGISTRATION FORM</strong>
+                    <p class="card_body">Developed a registration form web app with HTML, CSS, JavaScript, 
+                        Express.js, and SQL, ensuring secure storage of user credentials by hashing them before
+                        storing in the database, showcasing full-stack development proficiency.
+                    </p>
+                    <a href="https://tilakuppar.github.io/RegistrationForm/" class="card_link">Visit</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="resume" id="resume">
+            <h2 class="check_out">Check My Resume</h2>
+            <div class="resume_container" id="resume_container">
+                <div class="resume_title">
+                    <h2 class="resume_name">Tilak Uppar</h2>
+                    <h3>Computer Science Intern</h3>
+                    <small>Hi there! I'm a passionate CSE student with a knack for problem-solving and a love for coding. 
+                        Eager to learn, innovate, and make a positive impact through technology. Let's connect and explore 
+                        the world of endless possibilities together!
+                    </small>
+                </div>
+                <div class="resume_info">
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i>tilliveer22@gmail.com</li>
+                        <li><i class="fa-solid fa-mobile"></i>8073655967</li>
+                        <li><i class="fa-solid fa-location-dot"></i>Banglore, India</li>
+                    </ul>
+                </div>
+                <div class="resume_body">
+                    <div class="resume_section1">
+                        <div class="education_section">
+                            <h3 class="education_section_head">EDUCATION</h3>
+                            <div class="section">
+                                <h3><i class="fa-solid fa-circle"></i>Bachelor's of Engineering</h3>
+                                <h4>DAYANANDA SAGAR UNIVERSITY</h4>
+                                <small>01/2022-present</small>
+                                <p>courses</p>
+                                <h5>Computer Science and Engineering</h5>
+                            </div>
+                            <div class="section">
+                                <h3><i class="fa-solid fa-circle"></i>Secondary Education</h3>
+                                <h4>SRI SAI E TECHNO SCHOOL RAICHUR</h4>
+                                <small>01/2016 - 04/2019</small>
+                            </div>
+                            <div class="section">
+                                <h3><i class="fa-solid fa-circle"></i>Pre-University Education</h3>
+                                <h4>PRAMANA PUC COLLEGE RAICHUR</h4>
+                                <small>06/2020 - 07/2021,</small>
+                                <p>courses</p>
+                                <h5>PCMC</h5>
+                            </div>
+                        </div>
+
+                        <div class="project_section">
+                            <h3 class="project_section_head">PERSONAL PROJECTS</h3>
+                            <div class="project_lists">
+                                <ul>
+                                    <li>
+                                        <span>1. CHAT APPLICATION</span> - Built a real-time chat application using WebSockets and Express.js, 
+                                        with HTML, CSS, and JavaScript. Enables instant messaging with a responsive interface. 
+                                        Demonstrates proficiency in full-stack web development and real-time communication.
+                                    </li>
+                                    <li>
+                                        <span>2. CALCULATOR</span> - Designed and developed a calculator web application using HTML, CSS, and 
+                                        JavaScript. Capable of performing fundamental arithmetic calculations.
+                                    </li>
+                                    <li>
+                                        <span>3. MONEY TRACKER</span> - Crafted a money tracker web app using HTML, CSS, JavaScript, 
+                                        Express.js, and database connectivity. Enables users to monitor income, expenses, 
+                                        and real-time balance, showcasing full-stack development skills.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume_section2">
+                        <div class="skills_section">
+                            <h3 class="skills_section_head">PERSONAL PROJECTS</h3>
+                            <div class="skills_list">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JS</li>
+                                    <li>Node JS</li>
+                                </ul>
+                                <ul>
+                                    <li>Express JS</li>
+                                    <li>React JS</li>
+                                    <li>MySQL</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <ul>
+                                    <li>C</li>
+                                    <li>Python</li>
+                                    <li>Figma</li>
+                                    <li>Linux</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="internship_section">
+                            <h3 class="internship_section_head">INTERNSHIPS</h3>
+                            <div class="internships">
+                                <strong>1. CodeClause - Web Development Intern</strong><br>
+                                <small>31/10/2023 - 01/12/2023</small>
+                            </div>
+                            <div class="internships">
+                                <strong>2. Bharath Intern - Full Stack Developer Intern</strong><br>
+                                <small>11/11/2023 - 22/12/2023</small>
+                            </div>
+                            <div class="internships">
+                                <strong>3. Geeks Kepler - Basic Web Development</strong><br>
+                                <small>15/02/2024 - 17/03/2024</small>
+                            </div>
+                        </div>
+                        <div class="interest_section">
+                            <h3 class="interest_section_head">INTERESTS</h3>
+                            <div class="interest_list">
+                                <ul>
+                                    <li>Sports</li>
+                                    <li>Music</li>
+                                    <li>Social Works</li>
+                                    <li>Mobile Games</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="contact_section">
+                            <h3 class="contact_section_head">CONTACT INFORMATION</h3>
+                            <div class="info">
+                                <ul>
+                                    <li>Email :<span> tilliveer22@gmail.com</span></li>
+                                    <li>Phone :<span> +91 8073655967</span></li>
+                                    <li>LinkedIn :<span> linkedin.com/in/tilak-uppar</span></li>
+                                    <li>Instagram :<span> instagram.com/tillu_veer</span></li>
+                                    <li>GitHub :<span> github.com/tilakuppar</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="download">
+            <button class="download_btn" id="download_btn" onclick="downloadPDF()">Download PDF</button>
+        </div>
+
+        <div class="contact" id="contact">
+            <form action="/contact" method="post" class="contact_form">
+                <h1>Contact Me</h1><hr>
+                <div class="name">
+
+                    <label for="name">Name :</label>
+                    <input type="text" for="name" name="name" id="name" placeholder="Enter Your Full Name" required><br>
+                </div>
+                <div class="email">
+
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" placeholder="Email_ID" required><br>
+                </div>
+                <div class="message">
+
+                    <label for="msg">Message :</label>
+                    <input type="text" name="message" id="msg" placeholder="Write Your Response"><br>
+                </div>
+                <div class="buttons">
+                    <button class="submit" id="submit" name="submit">Submit</button>
+                    <button class="reset" id="reset" name="reste">Reset</button>
+                </div>
+            </form>
+            <div class="contact_info">
+                <div class="call_us">
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Call Us : 91+ 8073655967</p>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>Mail : tilliveer22@gmail.com</p>
+                </div>
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <P>12°53'24.5"N 77°38'24.1"E</P>
+                </div>
+                <div class="social_media">
+                    <h1 class="follow">Follow me on</h1>
+                    <div class="follow_icons">
+                        <a href="https://instagram.com/tillu_veer?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/tilli.veer?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/tilak-uppar-a08448234"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© 2024 Tilak Uppar | All Rights Reserved | Contact: tilliveer22@gmail.com </p>
+        </footer>
+
+    </div>
+
+
+    </div>
+
+
+</body>
+</html>
